@@ -1,0 +1,6 @@
+case_id,input,enabled,description
+safe_short,hello,true,Normal short input
+safe_maximum,123456789012345,true,Largest input that fits including the terminator
+boundary_16,1234567890123456,true,Security boundary input; exposes the off-by-one candidate
+oversized_17,12345678901234567,true,Clearly oversized input
+skip_example,do-not-run,false,Example disabled row

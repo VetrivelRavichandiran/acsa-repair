@@ -1,0 +1,17 @@
+{
+  "id": "cwe787_length_guard",
+  "language": "C",
+  "cwe": "CWE-787",
+  "vulnerable_file": "parser.c",
+  "vulnerable_line": 10,
+  "reference_command": ["./reference/parser", "1234567890123456"],
+  "candidate_command": ["./candidate/parser", "1234567890123456"],
+  "security_flows": [
+    {
+      "source": "length",
+      "transforms": ["buffer_size"],
+      "sink": "memcpy",
+      "severity": "critical"
+    }
+  ]
+}
