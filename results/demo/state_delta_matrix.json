@@ -1,0 +1,96 @@
+[
+  {
+    "function": "parse_input",
+    "variable": "length",
+    "reference_location": "parser.c:180",
+    "candidate_location": "parser.c:180",
+    "reference": 24,
+    "candidate": 1024,
+    "diff_type": "numeric",
+    "difference": 1000,
+    "alignment_confidence": 1.0,
+    "control_flow_changed": false
+  },
+  {
+    "function": "parse_input",
+    "variable": "index",
+    "reference_location": "parser.c:183",
+    "candidate_location": "parser.c:187",
+    "reference": 23,
+    "candidate": 1023,
+    "diff_type": "numeric",
+    "difference": 1000,
+    "alignment_confidence": 0.97,
+    "control_flow_changed": true
+  },
+  {
+    "function": "parse_input",
+    "variable": "length",
+    "reference_location": "parser.c:183",
+    "candidate_location": "parser.c:187",
+    "reference": 24,
+    "candidate": 1024,
+    "diff_type": "numeric",
+    "difference": 1000,
+    "alignment_confidence": 0.97,
+    "control_flow_changed": true
+  },
+  {
+    "function": "parse_input",
+    "variable": "__control_flow__",
+    "reference_location": "parser.c:183",
+    "candidate_location": "parser.c:187",
+    "reference": {
+      "branch": "within_bounds"
+    },
+    "candidate": {
+      "branch": "out_of_bounds"
+    },
+    "diff_type": "control_flow",
+    "difference": {
+      "reference": {
+        "branch": "within_bounds"
+      },
+      "candidate": {
+        "branch": "out_of_bounds"
+      }
+    },
+    "alignment_confidence": 0.97,
+    "control_flow_changed": true
+  },
+  {
+    "function": "parse_input",
+    "variable": "length",
+    "reference_location": "parser.c:184",
+    "candidate_location": "parser.c:188",
+    "reference": 24,
+    "candidate": 1024,
+    "diff_type": "numeric",
+    "difference": 1000,
+    "alignment_confidence": 0.97,
+    "control_flow_changed": true
+  },
+  {
+    "function": "parse_input",
+    "variable": "__control_flow__",
+    "reference_location": "parser.c:184",
+    "candidate_location": "parser.c:188",
+    "reference": {
+      "branch": "copy_allowed"
+    },
+    "candidate": {
+      "branch": "copy_attempted"
+    },
+    "diff_type": "control_flow",
+    "difference": {
+      "reference": {
+        "branch": "copy_allowed"
+      },
+      "candidate": {
+        "branch": "copy_attempted"
+      }
+    },
+    "alignment_confidence": 0.97,
+    "control_flow_changed": true
+  }
+]

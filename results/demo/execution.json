@@ -1,0 +1,24 @@
+{
+  "reference": {
+    "command": [
+      "python",
+      "../../acsa_repair/demo_tracer.py",
+      "reference"
+    ],
+    "returncode": 0,
+    "stdout": "{\"event_id\": 1, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 180}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"input_length\": {\"type\": \"int\", \"value\": 24}, \"length\": {\"type\": \"int\", \"value\": 24}}, \"control_flow\": {\"branch\": \"read_input\"}}\n{\"event_id\": 2, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 183}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"length\": {\"type\": \"int\", \"value\": 24}, \"buffer_size\": {\"type\": \"int\", \"value\": 32}, \"index\": {\"type\": \"int\", \"value\": 23}}, \"control_flow\": {\"branch\": \"within_bounds\"}}\n{\"event_id\": 3, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 184}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"length\": {\"type\": \"int\", \"value\": 24}, \"buffer_size\": {\"type\": \"int\", \"value\": 32}}, \"control_flow\": {\"branch\": \"copy_allowed\"}}\n",
+    "stderr": "",
+    "timed_out": false
+  },
+  "candidate": {
+    "command": [
+      "python",
+      "../../acsa_repair/demo_tracer.py",
+      "candidate"
+    ],
+    "returncode": 0,
+    "stdout": "{\"event_id\": 1, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 180}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"input_length\": {\"type\": \"int\", \"value\": 24}, \"length\": {\"type\": \"int\", \"value\": 1024}}, \"control_flow\": {\"branch\": \"read_input\"}}\n{\"event_id\": 2, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 187}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"length\": {\"type\": \"int\", \"value\": 1024}, \"buffer_size\": {\"type\": \"int\", \"value\": 32}, \"index\": {\"type\": \"int\", \"value\": 1023}}, \"control_flow\": {\"branch\": \"out_of_bounds\"}}\n{\"event_id\": 3, \"function\": \"parse_input\", \"location\": {\"file\": \"parser.c\", \"line\": 188}, \"iteration\": 0, \"call_stack\": [\"main\", \"parse_input\"], \"variables\": {\"length\": {\"type\": \"int\", \"value\": 1024}, \"buffer_size\": {\"type\": \"int\", \"value\": 32}}, \"control_flow\": {\"branch\": \"copy_attempted\"}}\n",
+    "stderr": "",
+    "timed_out": false
+  }
+}
