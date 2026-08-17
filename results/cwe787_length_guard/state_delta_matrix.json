@@ -1,0 +1,25 @@
+[
+  {
+    "function": "parse_input",
+    "variable": "__control_flow__",
+    "reference_location": "parser.c:11",
+    "candidate_location": "parser.c:17",
+    "reference": {
+      "branch": "reject_oversized"
+    },
+    "candidate": {
+      "branch": "copy_would_overflow"
+    },
+    "diff_type": "control_flow",
+    "difference": {
+      "reference": {
+        "branch": "reject_oversized"
+      },
+      "candidate": {
+        "branch": "copy_would_overflow"
+      }
+    },
+    "alignment_confidence": 0.955,
+    "control_flow_changed": true
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "reference": {
+    "command": [
+      "E:\\ACSA-Repair\\benchmarks\\cwe787_length_guard\\reference\\parser",
+      "1234567890123456"
+    ],
+    "returncode": 0,
+    "stdout": "{\"event_id\":1,\"function\":\"parse_input\",\"location\":{\"file\":\"parser.c\",\"line\":9},\"iteration\":0,\"call_stack\":[\"main\",\"parse_input\"],\"variables\":{\"length\":{\"type\":\"size_t\",\"value\":16},\"buffer_size\":{\"type\":\"size_t\",\"value\":16}},\"expressions\":{\"length < buffer_size\":false},\"control_flow\":{\"branch\":\"length_check\"}}\n{\"event_id\":2,\"function\":\"parse_input\",\"location\":{\"file\":\"parser.c\",\"line\":11},\"iteration\":0,\"call_stack\":[\"main\",\"parse_input\"],\"variables\":{\"length\":{\"type\":\"size_t\",\"value\":16},\"buffer_size\":{\"type\":\"size_t\",\"value\":16}},\"control_flow\":{\"branch\":\"reject_oversized\"}}\n",
+    "stderr": "",
+    "timed_out": false
+  },
+  "candidate": {
+    "command": [
+      "E:\\ACSA-Repair\\benchmarks\\cwe787_length_guard\\candidate\\parser",
+      "1234567890123456"
+    ],
+    "returncode": 0,
+    "stdout": "{\"event_id\":1,\"function\":\"parse_input\",\"location\":{\"file\":\"parser.c\",\"line\":9},\"iteration\":0,\"call_stack\":[\"main\",\"parse_input\"],\"variables\":{\"length\":{\"type\":\"size_t\",\"value\":16},\"buffer_size\":{\"type\":\"size_t\",\"value\":16}},\"expressions\":{\"length < buffer_size\":false},\"control_flow\":{\"branch\":\"length_check\"}}\n{\"event_id\":2,\"function\":\"parse_input\",\"location\":{\"file\":\"parser.c\",\"line\":17},\"iteration\":0,\"call_stack\":[\"main\",\"parse_input\"],\"variables\":{\"length\":{\"type\":\"size_t\",\"value\":16},\"buffer_size\":{\"type\":\"size_t\",\"value\":16}},\"control_flow\":{\"branch\":\"copy_would_overflow\"}}\n",
+    "stderr": "",
+    "timed_out": false
+  }
+}
