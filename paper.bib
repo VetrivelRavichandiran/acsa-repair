@@ -1,38 +1,93 @@
+### `paper.bib`
+
+I would replace your current bibliography with this cleaner version. I have kept your original references and added the foundational works that your full paper actually relies on.
+
+```bibtex
 @article{LeGoues2012,
-  title={GenProg: A generic method for automatic software repair},
-  author={Le Goues, C. and Nguyen, T. V. and Forrest, S. and Weimer, W.},
+  title={GenProg: A Generic Method for Automatic Software Repair},
+  author={Le Goues, Claire and Nguyen, ThanhVu and Forrest, Stephanie and Weimer, Westley},
   journal={IEEE Transactions on Software Engineering},
   volume={38},
   number={1},
   pages={54--72},
   year={2012},
-  publisher={IEEE}
+  publisher={IEEE},
+  doi={10.1109/TSE.2011.104}
+}
+
+@inproceedings{Nguyen2013,
+  title={SemFix: Program Repair via Semantic Analysis},
+  author={Nguyen, Hoang Duong Thien and Qi, Dawei and Roychoudhury, Abhik and Chandra, Satish},
+  booktitle={Proceedings of the 35th International Conference on Software Engineering},
+  pages={772--781},
+  year={2013},
+  publisher={IEEE},
+  doi={10.1109/ICSE.2013.6606623}
+}
+
+@inproceedings{Mechtaev2016,
+  title={Angelix: Scalable Multiline Program Patch Synthesis via Symbolic Analysis},
+  author={Mechtaev, Sergey and Yi, Jooyong and Roychoudhury, Abhik},
+  booktitle={Proceedings of the 38th International Conference on Software Engineering},
+  pages={691--701},
+  year={2016},
+  publisher={ACM},
+  doi={10.1145/2884781.2884807}
+}
+
+@article{Zeller2002,
+  title={Simplifying and Isolating Failure-Inducing Input},
+  author={Zeller, Andreas and Hildebrandt, Ralf},
+  journal={IEEE Transactions on Software Engineering},
+  volume={28},
+  number={2},
+  pages={183--200},
+  year={2002},
+  publisher={IEEE},
+  doi={10.1109/32.988498}
+}
+
+@article{McKeeman1998,
+  title={Differential Testing for Software},
+  author={McKeeman, William M.},
+  journal={Digital Technical Journal},
+  volume={10},
+  number={1},
+  pages={100--107},
+  year={1998}
+}
+
+@inproceedings{Jimenez2024,
+  title={SWE-bench: Can Language Models Resolve Real-world Github Issues?},
+  author={Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},
+  booktitle={International Conference on Learning Representations},
+  year={2024}
 }
 
 @inproceedings{Bouzenia2025,
-  title={RepairAgent: An autonomous, LLM-based agent for program repair},
-  author={Bouzenia, I. and Devanbu, P. and Pradel, M.},
-  booktitle={Proceedings of the 2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)},
+  title={RepairAgent: An Autonomous, LLM-based Agent for Program Repair},
+  author={Bouzenia, Islem and Devanbu, Premkumar and Pradel, Michael},
+  booktitle={Proceedings of the 2025 IEEE/ACM 47th International Conference on Software Engineering},
   pages={2188--2200},
   year={2025}
 }
 
 @article{Wang2025,
-  title={Show me why it's correct: Saving 1/3 of debugging time in program repair with interactive runtime comparison},
-  author={Wang, R. and Zhao, Z. and Fang, L. and Jiang, N. and Lou, Y. and Tan, L. and Zhang, T.},
+  title={Show Me Why It's Correct: Saving 1/3 of Debugging Time in Program Repair with Interactive Runtime Comparison},
+  author={Wang, Ruijie and Zhao, Zhenyu and Fang, Lingming and Jiang, Nan and Lou, Yiling and Tan, Lin and Zhang, Tianyi},
   journal={arXiv preprint arXiv:2503.00618},
   year={2025}
 }
 
 @article{Huang2025,
-  title={DynaFix: Iterative automated program repair driven by execution-level dynamic information},
+  title={DynaFix: Iterative Automated Program Repair Driven by Execution-level Dynamic Information},
   author={Huang, Z. and Xu, L. and Liu, C. and Sun, W. and Zhang, X. and Lei, Y. and Yan, M. and Zhang, H.},
   journal={arXiv preprint arXiv:2512.24635},
   year={2025}
 }
 
 @article{Liu2026,
-  title={ContraFix: Agentic vulnerability repair via differential runtime evidence and skill reuse},
+  title={ContraFix: Agentic Vulnerability Repair via Differential Runtime Evidence and Skill Reuse},
   author={Liu, S. and Li, T. and Liu, F. and Zhu, Y. and Zhang, L. and Wang, P. and Lian, X.},
   journal={arXiv preprint arXiv:2605.17450},
   year={2026}
